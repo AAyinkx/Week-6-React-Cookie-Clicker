@@ -9,7 +9,7 @@ export default function SecondaryContainer(props) {
           onClick={props.clickCookie}
           id="cookie"
           alt="Cookie to click"
-          src="/public/heartCookie.png"
+          src="./public/heartCookie.png"
         />
       </div>
       <button id="reset" onClick={props.resetButton}>
