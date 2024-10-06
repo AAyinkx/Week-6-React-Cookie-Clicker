@@ -1,4 +1,5 @@
 import "./SecondaryContainer.css";
+import heartCookie from "../../public/heartCookie.png";
 export default function SecondaryContainer(props) {
   return (
     <div id="secondary-container">
@@ -9,7 +10,7 @@ export default function SecondaryContainer(props) {
           onClick={props.clickCookie}
           id="cookie"
           alt="Cookie to click"
-          src="./public/heartCookie.png"
+          src={heartCookie}
         />
       </div>
       <button id="reset" onClick={props.resetButton}>
