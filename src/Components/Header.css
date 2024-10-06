@@ -1,0 +1,11 @@
+#header {
+  position: relative;
+  margin: 10px;
+}
+h1 {
+  font-family: "Bungee Tint", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  text-align: center;
+}

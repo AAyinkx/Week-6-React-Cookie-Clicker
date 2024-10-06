@@ -1,0 +1,55 @@
+#secondary-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 5px solid #d11d53;
+  padding: 40px 40px 10px 40px;
+  border-radius: 15px;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 10px;
+}
+#reset {
+  display: block;
+  font-size: large;
+  border-radius: 15px;
+  padding: 5px;
+  background-color: red;
+  color: white;
+  border-color: white;
+  font-weight: 600;
+  margin: auto;
+  margin-bottom: 10px;
+}
+#reset:hover {
+  background-color: white;
+  color: red;
+  border-color: red;
+}
+#number-of-cookies {
+  font-size: 4em;
+  text-align: center;
+}
+
+#cookies-per-second {
+  font-size: 1.5em;
+  text-align: center;
+}
+#cookie-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+#cookie {
+  width: 200px;
+  height: 200px;
+}
+#cookie:hover {
+  opacity: 0.8;
+}
+
+#cookie:active {
+  opacity: 1;
+  scale: 1.2 1.2;
+}

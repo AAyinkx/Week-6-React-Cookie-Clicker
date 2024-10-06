@@ -1,0 +1,114 @@
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+:root {
+  --background-color: rgba(247, 202, 201, 1);
+}
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+#root {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  top: 50vh;
+  transform: translateY(-50%);
+}
+body {
+  background-color: #e5e5f7;
+  opacity: 1;
+  background-image: linear-gradient(
+    to right,
+    var(--background-color),
+    var(--background-color) 5.5px,
+    #e5e5f7 5.5px,
+    #e5e5f7
+  );
+  background-size: 11px 100%;
+
+  font-family: "Montserrat";
+}
+#main-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-items: center; */
+  margin: 10px;
+  /* top: 50vh;
+  transform: translateY(-50%); */
+}
+.upgrade-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 1.2em;
+  border-bottom: 2px dotted #8c1c1c;
+}
+#upgrades-container {
+  position: relative;
+  min-width: 600px;
+  max-width: 800px;
+  align-items: center;
+  margin: 10px;
+  margin-top: 80px;
+  /* top: 50vh;
+  transform: translateY(-50%); */
+}
+@media ((width<=1111px)) {
+  #upgrades-container {
+    margin-top: 100px;
+  }
+  #cookie {
+    width: 150px;
+    height: 150px;
+  }
+}
+/* colum display upgrades sill in rows */
+@media ((width<=901px) or (height <=620px)) {
+  #root {
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    left: 50vw;
+    transform: translateX(-50%);
+    overflow-x: hidden;
+  }
+  #upgrades-container {
+    margin-top: 10px;
+    max-width: 700px;
+  }
+}
+/* column display upgrades now in columns */
+@media ((width<=650px)) {
+  #root {
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    left: 50vw;
+    transform: translateX(-50%);
+    overflow-x: hidden;
+  }
+  #upgrades-container {
+    margin-top: 0px;
+    min-width: 100px;
+    max-width: 600px;
+    height: 200px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-radius: 20px;
+    background-color: var(--background-color);
+  }
+  #cookie {
+    width: 100px;
+    height: 100px;
+  }
+  .upgrade-item {
+    flex-direction: column;
+    row-gap: 3px;
+  }
+}
